@@ -51,13 +51,17 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.header .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .logo-span {
   color: var(--main-title-color);
 }
 
 .header {
   background-color: var(--white-color);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .contacts {
@@ -115,12 +119,18 @@ body {
 .contact-link:focus {
   color: var(--acent-color);
 }
+.contact-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 /* ---------decision--------- */
 .decision {
   background-color: var(--basement-colour);
   text-align: center;
   margin-bottom: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .decision-title {
@@ -135,7 +145,7 @@ body {
 }
 
 .button {
-  min-width: 200px;
+  /* min-width: 200px; */
   display: inline-block;
   color: var(--main-title-color);
   border-radius: 4px;
@@ -205,7 +215,7 @@ body {
 }
 .advantages-text {
   margin-top: 0px;
-  margin-bottom: 94px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -223,6 +233,11 @@ body {
 .work-item:not(:last-child) {
   margin-right: 30px;
 }
+.work-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .work-title {
   margin-top: 0px;
@@ -235,7 +250,7 @@ body {
   color: var(--main-title-color);
 }
 
-.work{
+.work {
   padding-bottom: 94px;
 }
 /* ---------------comand------------ */
@@ -249,6 +264,13 @@ body {
 .comand-item:not(:last-child) {
   margin-right: 30px;
 }
+.comand-image {
+  background: var(--white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .comand-title {
   margin-top: 0px;
@@ -261,7 +283,7 @@ body {
   color: var(--main-title-color);
 }
 .comand-name {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -271,7 +293,7 @@ body {
   color: var(--main-title-color);
 }
 .comand-title-speciality {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   margin-top: 0px;
   font-size: 16px;
   line-height: 1.19;
@@ -279,34 +301,56 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
+.comand-item-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.comand-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* ------------footer--------------------- */
 .footer {
   background-color: var(--basement-colour);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-span-footer {
   color: var(--white-color);
 }
 .footer .logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
+.address{
+  display: block;
+}
+
+.address .footer-item:not(:last-child){
+  margin-bottom: 9px;
+}
+
 .address-place {
+  /* display: inline-block;
+  margin-bottom: 9px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  margin-bottom: 9px;
 }
 .footer-link {
+  /* display: inline-block;
+  margin-bottom: 9px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 
 .address-place:hover,
@@ -327,15 +371,17 @@ body {
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  margin-right: 8px;
 }
 
-.portfolio-nav.list {
+
+.portfolio .portfolio-nav  {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 54px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+}
+.portfolio-nav .portfolio-nav-item:not(:last-child){
+  margin-right: 8px;
 }
 
 .portfolio-nav .active {
@@ -354,8 +400,8 @@ body {
 }
 
 .portfolio-title {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -365,22 +411,25 @@ body {
 
 .portfolio-text {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
-.portrolio-discription{
- padding-left: 24px;
- border: #EEEEEE;
+.portrolio-discription {
+  padding: 20px 24px;
+  border-bottom: 1px #eeeeee;
+  border-right: 1px #eeeeee;
+  border-left: 1px #eeeeee;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
+
 .portfolio-item {
-  width: calc((100%-60px) 3);
+  width: calc((100% - 60px)/3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
